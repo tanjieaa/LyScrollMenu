@@ -40,24 +40,18 @@
 
 例子
 ```
- UIViewController *VC1 = [[UIViewController alloc]init];
+    UIViewController *VC1 = [[UIViewController alloc]init];
     [VC1.view setBackgroundColor:[UIColor redColor]];
-    
     UIViewController *VC2 = [[UIViewController alloc]init];
     [VC2.view setBackgroundColor:[UIColor blueColor]];
-    
     UIViewController *VC3 = [[UIViewController alloc]init];
     [VC3.view setBackgroundColor:[UIColor grayColor]];
-    
     UIViewController *VC4 = [[UIViewController alloc]init];
     [VC4.view setBackgroundColor:[UIColor greenColor]];
-    
     UIViewController *VC5 = [[UIViewController alloc]init];
     [VC5.view setBackgroundColor:[UIColor purpleColor]];
-    
     UIViewController *VC6 = [[UIViewController alloc]init];
     [VC6.view setBackgroundColor:[UIColor lightGrayColor]];
-    
     UIViewController *VC7 = [[UIViewController alloc]init];
     [VC7.view setBackgroundColor:[UIColor yellowColor]];
     
@@ -69,5 +63,6 @@
                                               MaxShowTitleNum:5];
     LyMenu.delegate = self;
     [self.view addSubview:LyMenu];
+
 
 ```
