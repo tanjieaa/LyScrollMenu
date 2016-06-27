@@ -35,6 +35,9 @@
 - (void)LyScrollMenuDelegateWithCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index;
 ```
 
+ ![image](https://github.com/Super-lying/LyScrollMenu/blob/master/ScreenFlow.gif)
+
+
 例子
 ```
  UIViewController *VC1 = [[UIViewController alloc]init];
