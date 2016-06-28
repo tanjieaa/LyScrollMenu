@@ -44,7 +44,7 @@
         
         if([titleArr[0] isKindOfClass:[NSString class]] && [viewArr[0] isKindOfClass:[UIView class]]){
             
-            CGFloat x = frame.origin.x;
+            CGFloat x = 0;
             CGFloat y = HeaderToolBar_Height;
             CGFloat w = frame.size.width;
             CGFloat h = frame.size.height - y;
@@ -58,7 +58,6 @@
             self.viewArr = viewArr;
             
             UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:_childFrame];
-            
             y = 0;
             x += 0;
             UIView *view = viewArr[0];
