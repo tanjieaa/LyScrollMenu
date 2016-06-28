@@ -124,8 +124,8 @@
     NSInteger page = scrollView.contentOffset.x / self.childFrame.size.width;
     [self.headerToolBar changeSelectItemWithIndex:page];
     
-    if([self.delegate respondsToSelector:@selector(LyScrollMenuDelegateWithCurrentView:didSelectItemWithIndex:)]){
-        [self.delegate LyScrollMenuDelegateWithCurrentView:self.viewArr[page] didSelectItemWithIndex:page];
+    if([self.delegate respondsToSelector:@selector(LyScrollMenuCurrentView:didSelectItemWithIndex:)]){
+        [self.delegate LyScrollMenuCurrentView:self.viewArr[page] didSelectItemWithIndex:page];
     }
 }
 
@@ -133,8 +133,8 @@
     NSInteger page = scrollView.contentOffset.x / self.childFrame.size.width;
     [self.headerToolBar changeSelectItemWithIndex:page];
     
-    if([self.delegate respondsToSelector:@selector(LyScrollMenuDelegateWithCurrentView:didSelectItemWithIndex:)]){
-        [self.delegate LyScrollMenuDelegateWithCurrentView:self.viewArr[page] didSelectItemWithIndex:page];
+    if([self.delegate respondsToSelector:@selector(LyScrollMenuCurrentView:didSelectItemWithIndex:)]){
+        [self.delegate LyScrollMenuCurrentView:self.viewArr[page] didSelectItemWithIndex:page];
     }
 }
  

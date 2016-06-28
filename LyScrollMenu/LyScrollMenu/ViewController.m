@@ -25,26 +25,21 @@
     
     UIViewController *VC1 = [[UIViewController alloc]init];
     [VC1.view setBackgroundColor:[UIColor redColor]];
-    
     UIViewController *VC2 = [[UIViewController alloc]init];
     [VC2.view setBackgroundColor:[UIColor blueColor]];
-    
     UIViewController *VC3 = [[UIViewController alloc]init];
     [VC3.view setBackgroundColor:[UIColor grayColor]];
-    
     UIViewController *VC4 = [[UIViewController alloc]init];
     [VC4.view setBackgroundColor:[UIColor greenColor]];
-    
     UIViewController *VC5 = [[UIViewController alloc]init];
     [VC5.view setBackgroundColor:[UIColor purpleColor]];
-    
     UIViewController *VC6 = [[UIViewController alloc]init];
     [VC6.view setBackgroundColor:[UIColor lightGrayColor]];
-    
     UIViewController *VC7 = [[UIViewController alloc]init];
     [VC7.view setBackgroundColor:[UIColor yellowColor]];
     
     CGRect Rect = CGRectMake(0, 20, kSCREEN_WIDTH, kSCREEN_HEIGHT);
+    
     LyScrollMenu *LyMenu = [[LyScrollMenu alloc]initWithFrame:Rect
                                           ControllerViewArray:@[VC1.view,VC2.view,VC3.view,VC4.view,VC5.view,VC6.view,VC7.view]
                                                    TitleArray:@[@"标题1",@"标题2",@"标题3",@"标题4",@"标题5",@"标题6",@"标题7"]

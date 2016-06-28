@@ -15,7 +15,7 @@
  *  @param currentView 当前的UIview
  *  @param index       当前view的索引
  */
-- (void)LyScrollMenuDelegateWithCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index;
+- (void)LyScrollMenuCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index;
 
 @end
 
@@ -35,6 +35,7 @@
 
 /**
  *  初始化方法2
+ *  可设置最多显示的标题个数
  *
  *  @param frame
  *  @param viewArr      scrollView上要添加的view数组   -> @[VC1.view,VC2.view,VC3.view,VC4.view,VC5.view]
@@ -43,6 +44,7 @@
  *
  */
 -(instancetype)initWithFrame:(CGRect)frame ControllerViewArray:(NSArray *)viewArr TitleArray:(NSArray *)titleArr MaxShowTitleNum:(NSInteger)maxNum;
+
 
 @property (nonatomic ,weak) id <LyScrollMenuDelegate> delegate;
 
