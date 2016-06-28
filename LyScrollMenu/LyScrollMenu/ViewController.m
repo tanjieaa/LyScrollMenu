@@ -51,7 +51,7 @@
 }
 
 
--(void)LyScrollMenuDelegateWithCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index{
+-(void)LyScrollMenuCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index{
     NSLog(@"currentView:%@ Index:%d",currentView,index);
 }
 
