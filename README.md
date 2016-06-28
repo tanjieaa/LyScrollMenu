@@ -1,5 +1,5 @@
 # LyScrollMenu
-横向菜单+页面滑动
+Segment+页面滑动
 
 使用方法
 ```
