@@ -13,6 +13,9 @@
 #import "ViewController.h"
 #import "LyScrollMenu.h"
 
+#import "SecondViewController.h"
+
+
 @interface ViewController ()<LyScrollMenuDelegate>
 
 @end
@@ -20,11 +23,14 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [super viewDidLoad]; 
     
-    UIViewController *VC1 = [[UIViewController alloc]init];
+//    UIViewController *VC1 = [[UIViewController alloc]init];
+//    [VC1.view setBackgroundColor:[UIColor redColor]];
+    SecondViewController *VC1 = [[SecondViewController alloc]init];
     [VC1.view setBackgroundColor:[UIColor redColor]];
+    [self addChildViewController:VC1];
+    
     UIViewController *VC2 = [[UIViewController alloc]init];
     [VC2.view setBackgroundColor:[UIColor blueColor]];
     UIViewController *VC3 = [[UIViewController alloc]init];
@@ -54,6 +60,8 @@
 -(void)LyScrollMenuCurrentView:(UIView *)currentView didSelectItemWithIndex:(NSInteger)index{
     NSLog(@"currentView:%@ Index:%d",currentView,index);
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -92,8 +92,12 @@
     CGFloat h = self.childFrame.size.height;
     
     x += index * w;
-    [self.scrollView scrollRectToVisible:CGRectMake(x, y, w , h) animated:YES];
+//    [self.scrollView scrollRectToVisible:CGRectMake(x, y, w , h) animated:YES];
+    [self.scrollView scrollRectToVisible:CGRectMake(x, y, w , h) animated:NO];
     
+    if([self.delegate respondsToSelector:@selector(LyScrollMenuCurrentView:didSelectItemWithIndex:)]){
+        [self.delegate LyScrollMenuCurrentView:self.viewArr[index] didSelectItemWithIndex:index];
+    }
 }
 
 

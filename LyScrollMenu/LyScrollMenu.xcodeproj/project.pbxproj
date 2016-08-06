@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE59D5261D3FF35100F953BB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE59D5251D3FF35100F953BB /* SecondViewController.m */; };
 		CEDB0B5F1D21349C00F47452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB0B5E1D21349C00F47452 /* main.m */; };
 		CEDB0B621D21349C00F47452 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB0B611D21349C00F47452 /* AppDelegate.m */; };
 		CEDB0B651D21349C00F47452 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB0B641D21349C00F47452 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE59D5241D3FF35100F953BB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CE59D5251D3FF35100F953BB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CEDB0B5A1D21349C00F47452 /* LyScrollMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyScrollMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDB0B5E1D21349C00F47452 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEDB0B601D21349C00F47452 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				CEDB0B6B1D21349C00F47452 /* LaunchScreen.storyboard */,
 				CEDB0B6E1D21349C00F47452 /* Info.plist */,
 				CEDB0B5D1D21349C00F47452 /* Supporting Files */,
+				CE59D5241D3FF35100F953BB /* SecondViewController.h */,
+				CE59D5251D3FF35100F953BB /* SecondViewController.m */,
 			);
 			path = LyScrollMenu;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				CEDB0B651D21349C00F47452 /* ViewController.m in Sources */,
 				CEDB0B7B1D213A6900F47452 /* NSString+CalculateFontSize.m in Sources */,
 				CEDB0B621D21349C00F47452 /* AppDelegate.m in Sources */,
+				CE59D5261D3FF35100F953BB /* SecondViewController.m in Sources */,
 				CEDB0B811D213CC600F47452 /* UIColor+Hex.m in Sources */,
 				CEDB0B5F1D21349C00F47452 /* main.m in Sources */,
 				CEDB0B8E1D2179C500F47452 /* HeaderToolScrollBar.m in Sources */,
@@ -303,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LyScrollMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lying.LyScrollMenu;
@@ -314,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LyScrollMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lying.LyScrollMenu;
